@@ -12,7 +12,7 @@ Validação de credenciais de acesso usando Selenium, WebDriver, JUnit e Cucumbe
 Scenario: test login validation credentials
 
   Given Open chrome and start application
-  When I enter valid username and validr password
+  When I enter valid username and valid password
   Then User should be able to login sucessfully
 
 
@@ -64,8 +64,8 @@ WebDriver driver;
 @When("I enter valid username and valid password")
   public void I_enter_valid_username_and_valid_password() thows Thowable {
 
-  driver.findElement(By.id("email")).sendKeys("fulano@gmail.com");
-  driver.findElement(By.id("pass")).sendKeys("fulano@gmail.com");
+  driver.findElement(By.id("email")).sendKeys("tomSmith@gmail.com");
+  driver.findElement(By.id("pass")).sendKeys("SuperSecretPassword");
 
 }
 
